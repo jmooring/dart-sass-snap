@@ -1,0 +1,26 @@
+name: dart-sass
+base: core22
+version: '1.63.2'
+summary: A Snap package to install Dart Sass
+description: |
+  Dart Sass is the reference implementation of Sass, written in Dart.
+
+  Project page: https://github.com/sass/dart-sass
+grade: stable
+confinement: strict
+apps:
+  dart-sass:
+    command: sass
+    plugs:
+      - home
+parts:
+  binary:
+    plugin: dump
+    source:
+      - on amd64: https://github.com/sass/dart-sass/releases/download/1.63.2/dart-sass-1.63.2-linux-x64.tar.gz
+      - on arm64: https://github.com/sass/dart-sass/releases/download/1.63.2/dart-sass-1.63.2-linux-arm64.tar.gz
+architectures:
+- build-on:  amd64
+  build-for: amd64
+- build-on:  amd64
+  build-for: arm64
