@@ -1,11 +1,41 @@
 name: dart-sass
-base: core22
-version: '1.63.2'
-summary: A Snap package to install Dart Sass
+version: '1.63.3'
+title: Dart Sass
+summary: Compile Sass to CSS.
 description: |
   Dart Sass is the reference implementation of Sass, written in Dart.
 
-  Project page: https://github.com/sass/dart-sass
+  Sass is a style sheet language that’s compiled to CSS. It allows you to use
+  variables, nested rules, mixins, functions, and more, all with a fully
+  CSS-compatible syntax. Sass helps keep large style sheets well-organized and
+  makes it easy to share design within and across projects.
+
+  Usage:
+
+  ```
+  dart-sass in.scss out.css
+  ```
+
+  To create an alias from `sass` to `dart-sass`:
+
+  ```
+  sudo snap alias dart-sass sass
+  ```
+
+  To remove the alias:
+
+  ```
+  sudo snap unalias sass
+  ```
+
+  Documentation: https://sass-lang.com
+
+  Project: https://github.com/sass/dart-sass
+contact: https://github.com/jmooring/dart-sass-snap
+icon: logo.png
+license: MIT
+source-code: https://github.com/jmooring/dart-sass-snap
+base: core22
 grade: stable
 confinement: strict
 apps:
@@ -17,8 +47,8 @@ parts:
   binary:
     plugin: dump
     source:
-      - on amd64: https://github.com/sass/dart-sass/releases/download/1.63.2/dart-sass-1.63.2-linux-x64.tar.gz
-      - on arm64: https://github.com/sass/dart-sass/releases/download/1.63.2/dart-sass-1.63.2-linux-arm64.tar.gz
+      - on amd64: https://github.com/sass/dart-sass/releases/download/1.63.3/dart-sass-1.63.3-linux-x64.tar.gz
+      - on arm64: https://github.com/sass/dart-sass/releases/download/1.63.3/dart-sass-1.63.3-linux-arm64.tar.gz
 architectures:
 - build-on:  amd64
   build-for: amd64
