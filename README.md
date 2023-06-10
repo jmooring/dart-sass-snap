@@ -1,5 +1,7 @@
 # Snap package for Dart Sass
 
+[![dart-sass](https://snapcraft.io/dart-sass/badge.svg)](https://snapcraft.io/dart-sass)
+
 Dart Sass is the reference implementation of Sass, written in Dart.
 
 Sass is a style sheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large style sheets well-organized and makes it easy to share design within and across projects.
@@ -24,6 +26,8 @@ sudo snap remove dart-sass
 Snap packages that you install are automatically updated when a new version is available.
 
 ## Usage
+
+To transpile Sass to CSS:
 
 ```text
 dart-sass in.scss out.css
