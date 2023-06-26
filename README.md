@@ -4,7 +4,7 @@
 
 Dart Sass is the reference implementation of Sass, written in Dart.
 
-Sass is a style sheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large style sheets well-organized and makes it easy to share design within and across projects.
+Sass is a style sheet language that is transpiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large style sheets well-organized and makes it easy to share design within and across projects.
 
 Documentation: <https://sass-lang.com>
 
