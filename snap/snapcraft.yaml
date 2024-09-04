@@ -1,19 +1,19 @@
 name: dart-sass
-version: '1.77.8'
+version: '1.78.0'
 base: core22
 grade: stable
 confinement: strict
 apps:
   dart-sass:
     command: sass
-    plugs5
+    plugs:
       - home
 parts:
   binary:
     plugin: dump
     source:
-      - on amd64: https://github.com/sass/dart-sass/releases/download/1.77.8/dart-sass-1.77.8-linux-x64.tar.gz
-      - on arm64: https://github.com/sass/dart-sass/releases/download/1.77.8/dart-sass-1.77.8-linux-arm64.tar.gz
+      - on amd64: https://github.com/sass/dart-sass/releases/download/1.78.0/dart-sass-1.78.0-linux-x64.tar.gz
+      - on arm64: https://github.com/sass/dart-sass/releases/download/1.78.0/dart-sass-1.78.0-linux-arm64.tar.gz
 architectures:
 - build-on:  amd64
   build-for: amd64
