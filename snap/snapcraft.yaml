@@ -1,29 +1,6 @@
 name: dart-sass
-version: '1.97.1'
-base: core22
-grade: stable
-confinement: strict
-apps:
-  dart-sass:
-    command: sass
-    plugs:
-      - home
-parts:
-  binary:
-    plugin: dump
-    source:
-      - on amd64: https://github.com/sass/dart-sass/releases/download/1.97.1/dart-sass-1.97.1-linux-x64.tar.gz
-      - on arm64: https://github.com/sass/dart-sass/releases/download/1.97.1/dart-sass-1.97.1-linux-arm64.tar.gz
-architectures:
-- build-on:  amd64
-  build-for: amd64
-- build-on:  amd64
-  build-for: arm64
-icon: logo.png
-license: MIT
-contact: https://github.com/jmooring/dart-sass-snap
-source-code: https://github.com/jmooring/dart-sass-snap
 title: Dart Sass
+version: '1.97.1'
 summary: Transpile Sass to CSS
 description: |
   Dart Sass is the reference implementation of Sass, written in Dart.
@@ -34,18 +11,45 @@ description: |
   makes it easy to share design within and across projects.
 
   To transpile Sass to CSS:
-
   `dart-sass in.scss out.css`
 
   To create an alias from `sass` to `dart-sass`:
-
   `sudo snap alias dart-sass sass`
 
   To remove the alias:
-
   `sudo snap unalias sass`
 
   References:
-
   * Documentation: https://sass-lang.com
   * Project: https://github.com/sass/dart-sass
+
+# Administrative Metadata
+license: MIT
+icon: snap/local/logo.png
+contact: https://github.com/jmooring/dart-sass-snap
+website: https://github.com/sass/dart-sass
+issues: https://github.com/jmooring/dart-sass-snap/issues
+donation: https://github.com/sponsors/jmooring
+source-code: https://github.com/jmooring/dart-sass-snap
+
+# Build Configuration
+base: core24
+grade: stable
+confinement: strict
+
+platforms:
+  amd64:
+  arm64:
+
+apps:
+  dart-sass:
+    command: sass
+    plugs:
+      - home
+
+parts:
+  binary:
+    plugin: dump
+    source:
+      - on amd64: https://github.com/sass/dart-sass/releases/download/1.97.1/dart-sass-1.97.1-linux-x64.tar.gz
+      - on arm64: https://github.com/sass/dart-sass/releases/download/1.97.1/dart-sass-1.97.1-linux-arm64.tar.gz
