@@ -1,6 +1,6 @@
 name: dart-sass
 title: Dart Sass
-version: '1.97.2'
+version: '1.97.3'
 summary: Transpile Sass to CSS
 description: |
   Dart Sass is the reference implementation of Sass, written in Dart.
@@ -51,5 +51,5 @@ parts:
   binary:
     plugin: dump
     source:
-      - on amd64: https://github.com/sass/dart-sass/releases/download/1.97.2/dart-sass-1.97.2-linux-x64.tar.gz
-      - on arm64: https://github.com/sass/dart-sass/releases/download/1.97.2/dart-sass-1.97.2-linux-arm64.tar.gz
+      - on amd64: https://github.com/sass/dart-sass/releases/download/1.97.3/dart-sass-1.97.3-linux-x64.tar.gz
+      - on arm64: https://github.com/sass/dart-sass/releases/download/1.97.3/dart-sass-1.97.3-linux-arm64.tar.gz
