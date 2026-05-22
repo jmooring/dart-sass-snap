@@ -1,6 +1,6 @@
 name: dart-sass
 title: Dart Sass
-version: '1.99.0'
+version: '1.100.0'
 summary: Transpile Sass to CSS
 description: |
   Dart Sass is the reference implementation of Sass, written in Dart.
